@@ -5,7 +5,7 @@ import plotly.express as px
 # Load the dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv('C:/Users/Admin/Downloads/Sci_Chatbot/ChatPDF/consumes.csv')
+    data = pd.read_csv('data/consumes.csv')
     data['time'] = pd.to_datetime(data['time'])
     return data
 
